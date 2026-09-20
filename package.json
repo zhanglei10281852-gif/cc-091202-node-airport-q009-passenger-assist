@@ -1,1 +1,1 @@
-{"name":"passenger-assistance-context","version":"0.1.0","private":true,"type":"module","description":"特殊旅客协助交接领域资料服务","scripts":{"start":"node src/server.js","test":"node --test"},"engines":{"node":">=20"}}
+{"name":"passenger-assistance-context","version":"0.1.0","private":true,"type":"module","description":"特殊旅客协助交接领域资料服务","scripts":{"start":"node src/server.js","seed":"node scripts/seed.mjs","test":"node --test"},"engines":{"node":">=20"}}

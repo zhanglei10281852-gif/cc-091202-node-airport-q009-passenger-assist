@@ -5,5 +5,12 @@ services:
       - "${APP_PORT:-3000}:3000"
     environment:
       PORT: 3000
+      DATA_DIR: /app/data
+      ASSIST_HEALTH_KEY: ${ASSIST_HEALTH_KEY:?需要 32 字节密钥（hex 或 base64）}
+      PASSENGER_TOKEN_TTL_HOURS: "${PASSENGER_TOKEN_TTL_HOURS:-12}"
+    volumes:
+      - assist-data:/app/data
     restart: unless-stopped
 
+volumes:
+  assist-data:
