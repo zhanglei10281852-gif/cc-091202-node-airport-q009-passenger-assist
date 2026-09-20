@@ -7,3 +7,6 @@ coverage/
 .DS_Store
 Thumbs.db
 
+
+# 运行期数据（事件/审计/密文保险库）
+data/
